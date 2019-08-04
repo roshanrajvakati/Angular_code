@@ -1,0 +1,58 @@
+warning: LF will be replaced by CRLF in src/app/app.component.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.module.ts.
+The file will have its original line endings in your working directory
+[1mdiff --git a/src/app/app.component.html b/src/app/app.component.html[m
+[1mindex 0f3d9d8..74b811a 100644[m
+[1m--- a/src/app/app.component.html[m
+[1m+++ b/src/app/app.component.html[m
+[36m@@ -1,21 +1,2 @@[m
+[31m-<!--The content below is only a placeholder and can be replaced.-->[m
+[31m-<div style="text-align:center">[m
+[31m-  <h1>[m
+[31m-    Welcome to {{ title }}![m
+[31m-  </h1>[m
+[31m-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">[m
+[31m-</div>[m
+[31m-<h2>Here are some links to help you start: </h2>[m
+[31m-<ul>[m
+[31m-  <li>[m
+[31m-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>[m
+[31m-  </li>[m
+[31m-  <li>[m
+[31m-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>[m
+[31m-  </li>[m
+[31m-  <li>[m
+[31m-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>[m
+[31m-  </li>[m
+[31m-</ul>[m
+[31m-[m
+ <router-outlet></router-outlet>[m
+[32m+[m[32m<app-login-component></app-login-component>[m
+[1mdiff --git a/src/app/app.module.ts b/src/app/app.module.ts[m
+[1mindex 2c3ba29..51d86fc 100644[m
+[1m--- a/src/app/app.module.ts[m
+[1m+++ b/src/app/app.module.ts[m
+[36m@@ -1,16 +1,20 @@[m
+ import { BrowserModule } from '@angular/platform-browser';[m
+ import { NgModule } from '@angular/core';[m
+[32m+[m[32mimport { FormsModule } from '@angular/forms';[m
+ [m
+ import { AppRoutingModule } from './app-routing.module';[m
+ import { AppComponent } from './app.component';[m
+[32m+[m[32mimport { LoginComponentComponent } from './login-component/login-component.component';[m
+ [m
+ @NgModule({[m
+   declarations: [[m
+[31m-    AppComponent[m
+[32m+[m[32m    AppComponent,[m
+[32m+[m[32m    LoginComponentComponent[m
+   ],[m
+   imports: [[m
+     BrowserModule,[m
+[31m-    AppRoutingModule[m
+[32m+[m[32m    AppRoutingModule,[m
+[32m+[m[32m    FormsModule[m
+   ],[m
+   providers: [],[m
+   bootstrap: [AppComponent][m
