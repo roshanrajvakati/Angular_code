@@ -1,0 +1,9 @@
+<section>
+  <form #f='ngForm' (ngSubmit)="print(f)">
+    <label for="userName">User Name</label><br>
+    <input type="text" id="userName" ngModel #userName='ngModel' name="userName" required /><br>
+    <label for="userPwd">Password</label><br>
+    <input type="password" id="userPwd" ngModel #userPwd='ngModel' name="userPwd" minlength="6" required /><br>
+    <button type="submit">Login</button>
+  </form>
+</section>
